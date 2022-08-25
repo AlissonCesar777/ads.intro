@@ -1,0 +1,50 @@
+	* Git é a ferramenta e Hub é o repositório remoto, onde possa almazenar os 
+projetos e arquivos para compartilha-los
+
+dentro dos arquivos
+1° Configurar as coinfigurações globais
+	- git config --global user.name "Alisson Cesar"
+	- git config --global user.email "alisson.souza3@fatec.sp.gov.br"
+
+2° Transformar a pasta em um repositório Git
+	-git init
+3° Configurar o windowns para aparecer a pasta oculta do git
+
+Usar o git status para ver se as pastas estao no repositório com permissao 
+
+4° Salvar os arquivos desntro do repositorio
+	-git add .
+
+5° Dar o primeiro commit(cria um ponto de salvamento)
+	-git commit -m "First Commit!"
+
+6° Para criar outro commit é só fazer o msm esquema
+
+
+7° Para comparar a diferença do status atual e o anterior:
+	-git diff nomedoarquivo
+
+8° Desfazer alterações depois do git add . (estando no staging area)
+	-git restore . --staged
+
+9° Para voltar ao documento original (antes da ultima alteração)
+	-git restore .
+		
+
+10° Para simplificar e voltar direto para o ultimo commit:
+	git reset --hard
+
+ 	NAVEGANDO POR COMMITS
+
+1° Use o comando abaixo para mostrar os commits:
+	gitlog --onelinepara 
+
+2° Observe os hashes dos commits que aparecem, escolha um deles e digite o comando:
+	gitcheckout (coloque o hash que quer apontar com o ponteiro HEAD) 
+
+3° A partir desse momento estamos no modo “detachedHEAD”, ou seja, não estamos mais na 
+última alteração. Navegue na pasta do repositório e veja que somente os arquivos corretos
+daquele commit estão disponíveis.
+
+4° Para voltar ao último commit, representado pelo branchmain(ou main), digite:
+	gitcheckout main
